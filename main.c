@@ -1,12 +1,12 @@
 #include <stdio.h>
-/*
+
 int bitAnd(int x, int y);
 int getByte(int x, int n);
 int logicalShift(int x, int n);
 
 int main() {
-    int x=0x87654321;
-    int n=4;
+    int x=0x12345678;
+    int n=16;
 
     printf("%x\n", logicalShift(x,n));
     printf("%x\n", x>>n);
@@ -44,7 +44,7 @@ int getByte(int x, int n) {
 }
 
 int logicalShift(int x, int n){
-    int mask = ~((~1)<<(31-n));
+    int mask = ~((~1)<<(31 + (~n + 1)));
     x>>=n;
     return x&mask;
 }

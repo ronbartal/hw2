@@ -1,19 +1,3 @@
-#include <stdio.h>
-
-int bitAnd(int x, int y);
-int getByte(int x, int n);
-int logicalShift(int x, int n);
-
-int main() {
-    int x=0x12345678;
-    int n=16;
-
-    printf("%x\n", logicalShift(x,n));
-    printf("%x\n", x>>n);
-
-    return 0;
-}
-
 
 /*
 * bitAnd ‐ x&y using only ~ and |
@@ -22,7 +6,9 @@ int main() {
 * Max ops: 8
 * Rating: 1
 */
+
 int bitAnd(int x, int y) {
+    /* De Morgan's law: ~(~x|~y) = x&y */
     return ~(~x|~y);
 }
 
@@ -34,7 +20,13 @@ int bitAnd(int x, int y) {
 * Max ops: 6
 * Rating: 2
 */
+
 int getByte(int x, int n) {
+
+    /* extract the bits from the byte we want and shift x to the right */
+    /* accordingly. then, by using mask to get rid of the rest of the */
+    /* bits, we get the byte we want. */
+
     int y=n<<3;
     x>>=y;
     int mask=~1;
@@ -43,7 +35,20 @@ int getByte(int x, int n) {
     return x&(~mask);
 }
 
+/*
+* logicalShift ‐ shift x to the right by n, using a logical shift
+* Can assume that 0 <= n <= 31
+* Examples: logicalShift(0x87654321,4) = 0x08765432
+* Legal ops: ! ~ & ^ | + << >>
+* Max ops: 20
+* Rating: 3
+*/
+
 int logicalShift(int x, int n){
+
+   /* creating a mask with 1's in the left n bits and 0's in the rest */
+    /* then, shifting x to the right n times and 'zero' the left n bits */
+
     int mask = ~((~1)<<(31 + (~n + 1)));
     x>>=n;
     return x&mask;

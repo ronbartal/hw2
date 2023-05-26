@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/hw2.dir/_try.c.o"
+  "CMakeFiles/hw2.dir/_try.c.o.d"
   "CMakeFiles/hw2.dir/main.c.o"
   "CMakeFiles/hw2.dir/main.c.o.d"
   "hw2"

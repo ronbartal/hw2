@@ -13,7 +13,7 @@ int main() {
 }
 
 /**
- * if f is the value of uf in float represetion, convert to -f
+ * if f is the value of uf in float representation, convert to -f
  * @param uf
  * @return unsigned that express -f if read as float
  */

@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/mac/Library/Mobile Documents/com~apple~CloudDocs/לימודים/סמסטר א/מבוא למדמח/הכנה למבחן מדמח/מועד ב/Users/mac/Library/Mobile Documents/com~apple~CloudDocs/לימודים/סמסטר א/מבוא למדמח/הכנה למבחן מדמח/מועד ב/hw2/ try.c" "CMakeFiles/hw2.dir/_try.c.o" "gcc" "CMakeFiles/hw2.dir/_try.c.o.d"
   "/Users/mac/Library/Mobile Documents/com~apple~CloudDocs/לימודים/סמסטר א/מבוא למדמח/הכנה למבחן מדמח/מועד ב/Users/mac/Library/Mobile Documents/com~apple~CloudDocs/לימודים/סמסטר א/מבוא למדמח/הכנה למבחן מדמח/מועד ב/hw2/main.c" "CMakeFiles/hw2.dir/main.c.o" "gcc" "CMakeFiles/hw2.dir/main.c.o.d"
   )
 

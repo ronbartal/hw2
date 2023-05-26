@@ -129,6 +129,30 @@ hw2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw2.dir/build.make CMakeFiles/hw2.dir/build
 .PHONY : hw2/fast
 
+_try.o: _try.c.o
+.PHONY : _try.o
+
+# target to build an object file
+_try.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw2.dir/build.make CMakeFiles/hw2.dir/_try.c.o
+.PHONY : _try.c.o
+
+_try.i: _try.c.i
+.PHONY : _try.i
+
+# target to preprocess a source file
+_try.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw2.dir/build.make CMakeFiles/hw2.dir/_try.c.i
+.PHONY : _try.c.i
+
+_try.s: _try.c.s
+.PHONY : _try.s
+
+# target to generate assembly for a file
+_try.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw2.dir/build.make CMakeFiles/hw2.dir/_try.c.s
+.PHONY : _try.c.s
+
 main.o: main.c.o
 .PHONY : main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... hw2"
+	@echo "... _try.o"
+	@echo "... _try.i"
+	@echo "... _try.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

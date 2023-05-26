@@ -76,6 +76,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/mac/Library/Mobile Documents/com~apple~CloudDocs/לימודים/סמסטר א/מבוא למדמח/הכנה למבחן מדמח/מועד ב/Users/mac/Library/Mobile Documents/com~apple~CloudDocs/לימודים/סמסטר א/מבוא למדמח/הכנה למבחן מדמח/מועד ב/hw2/ try.c">
+			<Option target="hw2"/>
+		</Unit>
 		<Unit filename="/Users/mac/Library/Mobile Documents/com~apple~CloudDocs/לימודים/סמסטר א/מבוא למדמח/הכנה למבחן מדמח/מועד ב/Users/mac/Library/Mobile Documents/com~apple~CloudDocs/לימודים/סמסטר א/מבוא למדמח/הכנה למבחן מדמח/מועד ב/hw2/main.c">
 			<Option target="hw2"/>
 		</Unit>
